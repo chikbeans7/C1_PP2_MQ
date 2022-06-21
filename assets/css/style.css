@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Lora', serif;
+}
+
+#banner {
+    font-size: 1.3em;
+    line-height: 1.6em;
+    letter-spacing: 3px;
+    text-align: center;
+    background-color: rgb(1, 1, 75);
+    color: white;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#adduser {
+    background-color: grey;
+    border-color: black;
+    font-size: 0.6em;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
