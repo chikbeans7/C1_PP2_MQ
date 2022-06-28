@@ -32,8 +32,13 @@ body {
     text-align: center;
 }
 
-#quiz {
-    text-align: center;
+.inline {
     display: block;
 }
+
+/* label, input {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+} */
 
