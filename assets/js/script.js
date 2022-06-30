@@ -2,16 +2,16 @@ const txt1 = document.getElementById('uname');
 const btn1 = document.getElementById('cont');
 const out1 = document.getElementById('output1');
 
-const q1 = document.querySelectorAll('input=[name="direcstar"]');
-const q2 = document.querySelectorAll('input=[name="jord"]');
-const q3 = document.querySelectorAll('input=[name="toy"]');
-const q4 = document.querySelectorAll('input=[name="rocky"]');
-const q5 = document.querySelectorAll('input=[name="djan"]');
-const q6 = document.querySelectorAll('input=[name="term"]');
-const q7 = document.querySelectorAll('input=[name="vilstar"]');
-const q8 = document.querySelectorAll('input=[name="pot1"]');
-const q9 = document.querySelectorAll('input=[name="pot2"]');
-const q10 = document.querySelectorAll('input=[name="iron"]');
+const q1 = document.querySelectorAll('input[name="direcstar"]');
+const q2 = document.querySelectorAll('input[name="jord"]');
+const q3 = document.querySelectorAll('input[name="toy"]');
+const q4 = document.querySelectorAll('input[name="rocky"]');
+const q5 = document.querySelectorAll('input[name="djan"]');
+const q6 = document.querySelectorAll('input[name="term"]');
+const q7 = document.querySelectorAll('input[name="vilstar"]');
+const q8 = document.querySelectorAll('input[name="pot1"]');
+const q9 = document.querySelectorAll('input[name="pot2"]');
+const q10 = document.querySelectorAll('input[name="iron"]');
 const totalScore = document.getElementById('score');
 const btn2 = document.getElementById('finish');
 
@@ -20,15 +20,14 @@ function getUserName(){
 }
 
 function getScore(){
-    let answer;
     let score = 0;
-    for(const radioButton of q1) {
-        if(radioButton.checked & radioButton.value == "correct"){
-            let score = score + 1;
+    for(let i=0;i++;q1[i]){
+        if(q1[i].checked){
+            score = 1;
             break;
         }
     }
-    totalScore.innerHTML = score.value; 
+    totalScore.innerHTML = score; 
 }
 
 btn1.addEventListener('click', getUserName);
