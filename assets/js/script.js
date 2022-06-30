@@ -22,62 +22,92 @@ function getUserName(){
 function getScore(){
     let score = 0;
     for(let i=0; i < q1.length; i++){
-        if(q1[i].checked && q1[i].value == 'correct'){
-            score++;
+        if(q1[i].checked){
+            if(q1[i].value == 'correct'){
+                score++;
+            }
+            q1[i].checked = false;
             break;
         }
     }
     for(let i=0; i < q2.length; i++){
-        if(q2[i].checked && q2[i].value == 'correct'){
-            score++;
+        if(q2[i].checked){
+            if(q2[i].value == 'correct'){
+                score++;
+            }
+            q2[i].checked = false;
             break;
         }
     }
     for(let i=0; i < q3.length; i++){
-        if(q3[i].checked && q3[i].value == 'correct'){
-            score++;
+        if(q3[i].checked){
+            if(q3[i].value == 'correct'){
+                score++;
+            }
+            q3[i].checked = false;
             break;
         }
     }
     for(let i=0; i < q4.length; i++){
-        if(q4[i].checked && q4[i].value == 'correct'){
-            score++;
+        if(q4[i].checked){
+            if(q4[i].value == 'correct'){
+                score++;
+            }
+            q4[i].checked = false;
             break;
         }
     }
     for(let i=0; i < q5.length; i++){
-        if(q5[i].checked && q5[i].value == 'correct'){
-            score++;
+        if(q5[i].checked){
+            if(q5[i].value == 'correct'){
+                score++;
+            }
+            q5[i].checked = false;
             break;
         }
     }
     for(let i=0; i < q6.length; i++){
-        if(q6[i].checked && q6[i].value == 'correct'){
-            score++;
+        if(q6[i].checked){
+            if(q6[i].value == 'correct'){
+                score++;
+            }
+            q6[i].checked = false;
             break;
         }
     }
     for(let i=0; i < q7.length; i++){
-        if(q7[i].checked && q7[i].value == 'correct'){
-            score++;
+        if(q7[i].checked){
+            if(q7[i].value == 'correct'){
+                score++;
+            }
+            q7[i].checked = false;
             break;
         }
     }
     for(let i=0; i < q8.length; i++){
-        if(q8[i].checked && q8[i].value == 'correct'){
-            score++;
+        if(q8[i].checked){
+            if(q8[i].value == 'correct'){
+                score++;
+            }
+            q8[i].checked = false;
             break;
         }
     }
     for(let i=0; i < q9.length; i++){
-        if(q9[i].checked && q9[i].value == 'correct'){
-            score++;
+        if(q9[i].checked){
+            if(q9[i].value == 'correct'){
+                score++;
+            }
+            q9[i].checked = false;
             break;
         }
     }
     for(let i=0; i < q10.length; i++){
-        if(q10[i].checked && q10[i].value == 'correct'){
-            score++;
+        if(q10[i].checked){
+            if(q10[i].value == 'correct'){
+                score++;
+            }
+            q10[i].checked = false;
             break;
         }
     }
