@@ -7,3 +7,4 @@ function getUserName(){
 }
 
 btn1.addEventListener('click', getUserName);
+
