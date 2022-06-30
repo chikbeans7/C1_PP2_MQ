@@ -20,14 +20,15 @@ function getUserName(){
 }
 
 function getScore(){
+    let answer;
     let score = 0;
-    for(let i=0;i++;q1[i]){
+    for(let i=0; i < q1.length; i++){
         if(q1[i].checked){
-            score = 1;
+            answer = q1[i].value;
             break;
         }
     }
-    totalScore.innerHTML = score; 
+    totalScore.innerHTML = answer; 
 }
 
 btn1.addEventListener('click', getUserName);
