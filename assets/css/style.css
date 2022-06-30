@@ -42,3 +42,8 @@ body {
     text-align: center;
 }
 
+#quiz {
+    background-color:rgb(1, 1, 75);
+    color: white;
+}
+
