@@ -33,12 +33,12 @@ body {
 }
 
 .inline {
+    border-style: solid;
+    border-color: aqua;
     display: block;
 }
 
-/* label, input {
-    display: block;
+.question {
     text-align: center;
-    margin: 0 auto;
-} */
+}
 
