@@ -18,7 +18,8 @@ const btn2 = document.getElementById('finish');
 let counter = 0;
 
 function getUserName(){
-    document.getElementById("displayuname").innerHTML = '<h2>Welcome '+uname.value+'!</h2>';    
+    document.getElementById("displayuname").innerHTML = '<h2>Welcome '+uname.value+'!</h2>';
+    uname.value = "";    
 }
 
 function getScore(){
