@@ -48,7 +48,11 @@ body {
     font-size: 0.8em;
 }
 
-#endbtns {
-    display: block;
+#endbtns{
+    text-align: center;
+}
+
+#finish {
     padding: 24px 32px;
+    margin: 0 auto;
 }
