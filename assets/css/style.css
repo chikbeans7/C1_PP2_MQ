@@ -48,3 +48,7 @@ body {
     font-size: 0.8em;
 }
 
+#endbtns {
+    display: block;
+    padding: 24px 32px;
+}
