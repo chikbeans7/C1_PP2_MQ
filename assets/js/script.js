@@ -15,10 +15,12 @@ const q10 = document.querySelectorAll('input[name="iron"]');
 const totalScore = document.getElementById('score');
 const btn2 = document.getElementById('finish');
 
+let counter = 0;
+
 function getUserName(){
-    document.getElementById("displayuname").innerHTML += 
-              '<h2>Welcome '+uname.value+'</h2>';
+    document.getElementById("displayuname").innerHTML = '<h2>Welcome '+uname.value+'!</h2>';    
 }
+
 function getScore(){
     let score = 0;
     for(let i=0; i < q1.length; i++){
