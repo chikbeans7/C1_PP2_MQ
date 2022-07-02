@@ -28,6 +28,11 @@ function getScore(){
         if(q1[i].checked){
             if(q1[i].value == 'correct'){
                 score++;
+                let img = document.createElement("img");
+                img.src = "assets/images/GeorgeLucas.jpg";
+
+                let div = document.getElementById("x");
+                div.appendChild(img);
             }
             q1[i].checked = false;
             break;
