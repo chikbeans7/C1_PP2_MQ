@@ -58,10 +58,8 @@ body {
 }
 
 #x {
-    position: absolute;
-    height: 100px;
-    width: 50px;
-    top: 100px;
-    right: 50px;
-    
+    height: 10%;
+    width: 10%;
+    background: center center/cover no-repeat;
+    float: right;
 }
