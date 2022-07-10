@@ -23,6 +23,9 @@
     </div>
     <div id="quiz">
         <div id="displayuname"></div>
+        <div id="endbtns">
+            <input type="submit" id="finish">
+        </div> 
         <p>Question 1</p>
         <div class="question-area">
             <p class="question">Which one of these was a director of starwars?</p>
@@ -38,9 +41,11 @@
                 <label for="q1a1">Quentin Tarantino</label>
                 <input type="radio" id="q1a3" name="direcstar" value="wrong">
             </div>
-            <div class="inline" id="x">
+            <div class="inline">
                 <label for="q1a1">George Lucas</label>
                 <input type="radio" id="q1a4" name="direcstar" value="correct">
+            </div>
+            <div id="x">
             </div>
         </div>
 
@@ -251,9 +256,7 @@
             </div>
         </div>
         <p>Score:<span id="score"></span>/10</p>
-        <div id="endbtns">
-            <input type="submit" id="finish">
-        </div> 
+        
     </div>
     <script src="assets/js/script.js"></script>
 </body>

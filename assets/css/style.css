@@ -56,3 +56,12 @@ body {
     padding: 24px 32px;
     margin: 0 auto;
 }
+
+#x {
+    position: absolute;
+    height: 100px;
+    width: 50px;
+    top: 100px;
+    right: 50px;
+    
+}
