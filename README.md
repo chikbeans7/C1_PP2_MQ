@@ -1,23 +1,23 @@
 # Project Goals
 ## User Goals
-- Learn the history of Napoleon Bonaparte
-- Use as a revision tool for exams about Napoleon
-- Entertain themselves with facts and knowledge about Napoleon
+- Test movie knowledge
+- Have fun trying to answer them correctly
+- Learn more about films
 ## Site Owner Goals
-- Have users return to the page to find out more information
-- Create a website that was easy to use and understand
-- Make information quick and easy to digest for the user
+- Have users return to the page to engage with the quiz to improve score
+- Create a quiz that is simple so that the entertainment value is not lost
+- Make the quiz dificult to be fun but easy enough to not discourage
 
 # User Experience
 ## Target Audience
-- People trying to learn about the history of France
-- People looking to revise for an upcoming exam
-- People who are studying at univeristy or college and need inspiration for a project
+- People trying to test movie knowledge
+- People looking to pass the time
+- People who are movie experts
 
 ## User Requriements and Expectations
-- Easy to use navigation system
-- Information that is easy to digest
-- Useful facts about Napoleon that can increase knowledge
+- Simple quiz layout to navigate
+- Questions are short and sweet
+- Interesting movie questions
 - Accessibility
 
 # User Stories
