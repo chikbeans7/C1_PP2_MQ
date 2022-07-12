@@ -11,18 +11,24 @@
     <title>Movie Quiz</title>
 </head>
 <body>
+    <!-- Banner/Header -->
     <h1 id="banner">Movie Quiz</h1>
     <div id="welcome">
         <p>Welcome to this quiz about Movies</p>
         <p>If you wish to attempt this quiz create a username below and press continue</p>
     </div>
+    <!-- Where user adds username -->
     <div id="adduser">
             <label for="uname">Username:</label>
             <input type="text" id="uname" placeholder="Enter Username" required>
             <input type="button" id="cont" value="Continue">
     </div>
     <div id="quiz">
+
+        <!-- Where username is displayed -->
         <div id="displayuname"></div>
+
+        <!-- Quiz start -->
         <p>Question 1</p>
         <div class="question-area">
             <p class="question">Which one of these was a director of starwars?</p>
@@ -252,11 +258,14 @@
                 <input type="radio" id="q10a4" name="iron" value="wrong">
             </div>
         </div>
+
+        <!-- Where score is displayed/where the user submits score -->
         <p>Score:<span id="score"></span>/10</p>  
         <div id="endbtns">
             <input type="submit" id="finish">
         </div> 
     </div>
+    <!-- A well done image is displayed here upon completion -->
     <div id="img-container"></div>
     <script src="assets/js/script.js"></script>
 </body>

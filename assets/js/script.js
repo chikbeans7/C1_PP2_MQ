@@ -1,7 +1,9 @@
+//For the getUsername function
 const txt1 = document.getElementById('uname');
 const btn1 = document.getElementById('cont');
 const out1 = document.getElementById('output1');
 
+//Collects all the data from the question radio buttons
 const q1 = document.querySelectorAll('input[name="direcstar"]');
 const q2 = document.querySelectorAll('input[name="jord"]');
 const q3 = document.querySelectorAll('input[name="toy"]');
@@ -15,15 +17,17 @@ const q10 = document.querySelectorAll('input[name="iron"]');
 const totalScore = document.getElementById('score');
 const btn2 = document.getElementById('finish');
 
-let counter = 0;
-
+//displays username on button click event
 function getUserName(){
     document.getElementById("displayuname").innerHTML = '<h2>Welcome '+uname.value+'!</h2>';
     uname.value = "";    
 }
 
+
 function getScore(){
     let score = 0;
+
+    //Loops through each questions array of radio buttons and sees if they are checked and if it is the correct answer
     for(let i=0; i < q1.length; i++){
         if(q1[i].checked){
             if(q1[i].value == 'correct'){
@@ -114,6 +118,8 @@ function getScore(){
             break;
         }
     }
+
+    // Displays the score and adds a well done image to the bottom of the screen
     totalScore.innerHTML = score; 
     let img = document.createElement("img");
     img.src = "assets/images/welldone.png";
@@ -122,5 +128,6 @@ function getScore(){
     div.appendChild(img);
 }
 
+// Button event listener for the 2 buttons
 btn1.addEventListener('click', getUserName);
 btn2.addEventListener('click', getScore);
