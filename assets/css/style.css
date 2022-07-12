@@ -57,9 +57,7 @@ body {
     margin: 0 auto;
 }
 
-#x {
-    height: 10%;
-    width: 10%;
-    background: center center/cover no-repeat;
-    float: right;
+#img-container {
+    text-align: center;
+    background-color: rgb(1, 1, 75);
 }
