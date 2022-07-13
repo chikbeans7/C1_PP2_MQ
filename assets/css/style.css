@@ -30,7 +30,7 @@ body {
 
 /* Style of the username box */
 #adduser {
-    background-color: grey;
+    background-color: rgb(52, 52, 52);
     border-color: black;
     font-size: 0.6em;
     display: block;
