@@ -17,6 +17,8 @@ const q10 = document.querySelectorAll('input[name="iron"]');
 const totalScore = document.getElementById('score');
 const btn2 = document.getElementById('finish');
 
+let counter = 0;
+
 //displays username on button click event
 function getUserName(){
     document.getElementById("displayuname").innerHTML = '<h2>Welcome '+uname.value+'!</h2>';
@@ -124,8 +126,11 @@ function getScore(){
     let img = document.createElement("img");
     img.src = "assets/images/welldone.png";
 
-    let div = document.getElementById("img-container");
-    div.appendChild(img);
+    if(counter < 1){
+        let div = document.getElementById("img-container");
+        div.appendChild(img);
+    }
+    counter++;
 }
 
 // Button event listener for the 2 buttons
