@@ -7,6 +7,8 @@
 body {
     font-size: 2rem;
     font-family: 'Merriweather', serif;
+    background-color: rgb(1, 1, 75);
+    color: white;
 }
 
 /*heading styles*/
@@ -21,6 +23,7 @@ body {
 
 #welcome {
     background-color: yellow;
+    color: black;
     text-align: center;
     font-size: 0.8em;
 }
@@ -46,11 +49,6 @@ body {
     text-align: center;
 }
 
-#quiz {
-    background-color:rgb(1, 1, 75);
-    color: white;
-}
-
 /* Button Styles */
 #endbtns{
     text-align: center;
@@ -66,3 +64,4 @@ body {
     text-align: center;
     background-color: rgb(1, 1, 75);
 }
+

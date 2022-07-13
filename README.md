@@ -22,42 +22,41 @@
 
 # User Stories
 ## First-time User
-- As a first time user, I want to know who Napoleon actually is
-- As a first time user, I want to know about his accomplishments
-- As a first time user, I want to know more about why he is such a Famous figure in history
-- As a first time user, I want to understand his strategy in battle and what made him successful
+- As a first time user, I want to test my movie knowledge
+- As a first time user, I want to be entertained
+- As a first time user, I want to challenge my self to get all the answers correct
+- As a first time user, I want to learn more about films
 
 ## Returning User
-- As a returning user, I want to check my knowledge on Napoleon is correct
-- As a returnign user, I want to know more information to build on what I already know
-- As a returning user, I want to find more resources to learn from about Napoleon
-- As a returning user, I want to see videos of battles Napoleon was in
+- As a returning user, I want to see if I can get all the answers correct
+- As a returning user, I want to see if my movie knowledge has improved
+- As a returning user, I want to pass the time and try to learn soemthing new
 
 ## Site Owner
-- As the site owner, I want users to use the tool as a revision guide
-- As the site owner, I want users to get to learn more about the history of Napoleon
-- As the site owner, I want the users to be able to contact us so that they can ask questions about Napoleon
+- As the site owner, I want users to be challenged
+- As the site owner, I want users to learn more about films
+- As the site owner, I want the users to be able to want to get their friends and family to attempt the quiz
 
 # Design
 ## Design Choices
-I wanted to make the website feel a bit old fashioned with colors of blue representing part of the French flag. It needs to feel antique and old so that the user can feel like they are going back in time.
+I wanted to make the website feel like a movie theatre so I used a deep blue.
 
 ## Fonts
-I used the lora font for my page as it looks like ancient writing and makes the website have the more historical feel to it.
+I used the merriweather font style because it looks modern and gives that movie trailer/title look to the font.
 
 ## Structure
-The website is structured so that the user can slowly build from no information about Napoleon to knowing a good amount of knowledge. It starts with a brief descriptipon on the homepage and links to the other pages and what they have to offer. Here are the 4 main pages that the website has:
+The website is structured with a welcome header and a username box, then beneath that there are ten questions that the user is then to work through until they reach the end and click submit and find out what score they achieved.
 
-- An easy to understand and use nav bar
-- A home page that gives a brief description of Napoleon
-- A page that provides videos of Napoleon in battles
-- A page that provides some easy to digest personal facts about Napoleon
-- A page that provides information to contact, a form and a google maps
+- A welcome message and username box
+- Questions about films
+- A score keeper at the bottom
+- A well done message that appears upon completion
 
 # Technologies Used
 ## Languages
 - HTML
 - CSS 
+- Javascript
 
 ## Frameworks & Tools
 - Bootstrap v5.0
@@ -67,13 +66,12 @@ The website is structured so that the user can slowly build from no information 
 - Google Fonts
 
 # Features
-The website consists of 4 pages and 8 features.
+The website consists of 1 pages and 5 features.
 
-## Banner and nav bar
-- Includes links to landing page (Brief description), Personal history page, Military history page and Contact us page
-- Fully responasive nav bar that also highlights the page that they are currently on and is at the top of every page
-- Users can easily navigate the website using this as it shows them where they are and where they can go next
-![nav](https://user-images.githubusercontent.com/81440285/173217362-5e3d197b-f60c-4034-a5a3-03928651d308.png)
+## Banner and username box
+- Welcomes the user and allows them to enter their name so that it displays at the top of the screen
+[](../../hader.png%0D) ![](../../question%20ex.png) 
+
 ## Brief description
 - Provides an image of Naploeon
 - Tells user who Napoleon is and why he is significant
