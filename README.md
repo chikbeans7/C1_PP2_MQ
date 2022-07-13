@@ -86,10 +86,13 @@ The website consists of 1 page and 5 features.
 ![](../../complete.png)
 
 # Validation
+## JShint
+The JShint validator was used to validate the javascript of the website. The code passed with no errors.
+![](../../jshint.png)
+
 ## HTML Validation
 The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
 ![](../../htmlmq.png)
-
 ## CSS Validation
 The W3C Jigsaw CSS Validation Service was used to validate the CSS of the website. No errors were found.
 ![](../../cssmq.png)
