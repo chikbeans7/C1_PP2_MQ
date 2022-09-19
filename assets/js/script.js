@@ -4,7 +4,8 @@ const btn1 = document.getElementById('cont');
 const out1 = document.getElementById('output1');
 
 //Collects all the data from the question radio buttons
-const questions = document.getElementsByClassName("inline");
+const questions = document.getElementsByClassName("question-area");
+const answers = document.getElementsByClassName("inline");
 const totalScore = document.getElementById('score');
 const btn2 = document.getElementById('finish');
 
@@ -22,13 +23,14 @@ function getScore(){
 
     //Loops through each questions array of radio buttons and sees if they are checked and if it is the correct answer
     for(let i=0; i < questions.length; i++){
-        let button = questions[i].childen;
-        if(button[1].checked){
-            if(button[1].value == 'correct'){
-                score++;
+        for(let i of answers){
+            let button = answers[i].childen;
+            if(button[1].checked){
+                if(button[1].value === 'correct'){
+                    score++;
+                    break;
+                }
             }
-            button[1].checked = false;
-            break;
         }
     }
 
