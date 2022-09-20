@@ -9,6 +9,7 @@ const btn2 = document.getElementById('finish');
 const questions = document.querySelectorAll('.question-area');
 
 let counter = 0;
+let green = false;
 
 // Button event listener for the 2 buttons
 btn1.addEventListener('click', getUserName);
@@ -24,7 +25,6 @@ for(let i = 0; i < questions.length; i++){
 }
 
 function changeColor(event){
-    let green = false;
     if(event.type === 'mouseover'){
         if(this.style.backgroundColor === "green"){
             green = true;
@@ -38,9 +38,9 @@ function changeColor(event){
         if(this.style.backgroundColor === "green"){
             green = true;
             this.style.backgroundColor = "green";
-        } else if(green === true){
+        }else if(green === true){
             this.style.backgroundColor = "green";
-        } else if(green === false){
+        } else{
             this.style.backgroundColor = "initial";
             this.style.color = "white";
         }
