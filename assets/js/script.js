@@ -18,7 +18,7 @@ for(let i = 0; i < questions.length; i++){
     const hoverDiv = questions[i].querySelectorAll('.inline');
     for(let i = 0; i < hoverDiv.length; i++){
         hoverDiv[i].addEventListener('mouseover',changeColor);
-        hoverDiv[i].addEventListener('onmouseleave',changeColor);
+        hoverDiv[i].addEventListener('mouseleave',changeColor);
         hoverDiv[i].addEventListener('click',changeColor);
     }
 }
@@ -31,11 +31,13 @@ function changeColor(event){
     }
     else if(event.type === 'mouseleave'){
         console.log("leave");
-        this.style.backgroundColor = "rgb(1, 1, 75);"
+        this.style.backgroundColor = "initial";
+        this.style.color = "white";
     }
     else if(event.type === 'click'){
-        console.log("click");
-        this.style.backgroundColor = "green";
+        if(counter === 0){
+            this.style.backgroundColor = "green";
+        }
     }
 }
 
