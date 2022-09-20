@@ -11,7 +11,23 @@ let counter = 0;
 
 // Button event listener for the 2 buttons
 btn1.addEventListener('click', getUserName);
-btn2.addEventListener('click', getScore);
+btn2.addEventListener('click', testFun);
+
+function testFun(){
+    let score = 0;
+    const questions = document.querySelectorAll('.question-area');
+    for(let i = 0; i < questions.length; i++){
+        const answers = questions[i].querySelectorAll('.inline');
+        for(let i = 0; i < answers.length; i++){
+            let box = answers[i].children;
+            if(box[1].checked && (box[1].value === "correct")){
+                score++;
+                console.log(box[1].value);
+            }
+        }
+    }
+    totalScore.innerHTML = score; 
+}
 
 //displays username on button click event
 function getUserName(){
@@ -19,8 +35,8 @@ function getUserName(){
     uname.value = "";    
 }
 
-function getScore(){
-    const questions = document.querySelectorAll('.question-area');
+/* function getScore(){
+    
     let score = 0;
     //Loops through each questions array of radio buttons and sees if they are checked and if it is the correct answer
     for(let i=0; i < questions.length; i++){
@@ -35,10 +51,10 @@ function getScore(){
                 }
             }
         }
-    }
+    } */
 
-    // Displays the score and adds a well done image to the bottom of the screen
-    totalScore.innerHTML = score; 
+   /*  // Displays the score and adds a well done image to the bottom of the screen
+    
     let img = document.createElement("img");
     img.src = "assets/images/welldone.png";
 
@@ -47,4 +63,4 @@ function getScore(){
         div.appendChild(img);
     }
     counter++;
-}
+} */
