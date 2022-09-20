@@ -24,15 +24,24 @@ for(let i = 0; i < questions.length; i++){
 }
 
 function changeColor(event){
+    let green = false;
     if(event.type === 'mouseover'){
-        console.log("enter");
+        if(this.style.backgroundColor === "green"){
+            green = true;
+        } else{
+            green = false;
+        }
         this.style.backgroundColor = "white";
         this.style.color = "black";
     }
     else if(event.type === 'mouseleave'){
-        console.log("leave");
-        this.style.backgroundColor = "initial";
-        this.style.color = "white";
+        if(green === false){
+            this.style.backgroundColor = "initial";
+            this.style.color = "white";
+        } else{
+            this.style.backgroundColor = "green";
+        }
+        
     }
     else if(event.type === 'click'){
         if(counter === 0){
