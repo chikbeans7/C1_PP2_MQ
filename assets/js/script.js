@@ -35,13 +35,15 @@ function changeColor(event){
         this.style.color = "black";
     }
     else if(event.type === 'mouseleave'){
-        if(green === false){
+        if(this.style.backgroundColor === "green"){
+            green = true;
+            this.style.backgroundColor = "green";
+        } else if(green === true){
+            this.style.backgroundColor = "green";
+        } else if(green === false){
             this.style.backgroundColor = "initial";
             this.style.color = "white";
-        } else{
-            this.style.backgroundColor = "green";
         }
-        
     }
     else if(event.type === 'click'){
         if(counter === 0){
