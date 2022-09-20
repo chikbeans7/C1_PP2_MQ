@@ -23,6 +23,7 @@ function testFun(){
             if(box[1].checked && (box[1].value === "correct")){
                 score++;
                 console.log(box[1].value);
+                break;
             }
         }
     }
