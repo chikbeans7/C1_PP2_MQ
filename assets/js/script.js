@@ -40,14 +40,23 @@ function changeColor(event){
             this.style.backgroundColor = "green";
         }else if(green === true){
             this.style.backgroundColor = "green";
-        } else{
+        }else{
             this.style.backgroundColor = "initial";
             this.style.color = "white";
         }
     }
     else if(event.type === 'click'){
-        if(counter === 0){
-            this.style.backgroundColor = "green";
+        if(this.style.backgroundColor !== "green"){
+            for(let i = 0; i < questions.length; i++){
+                const answers = questions[i].querySelectorAll('.inline');
+                for(let i = 0; i < answers.length; i++){
+                    let box = answers[i];
+                    if(box.style.backgroundColor === "green"){
+                        let x = 1;
+                        break;
+                    }
+                }
+            }
         }
     }
 }
