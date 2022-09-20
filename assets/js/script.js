@@ -17,12 +17,26 @@ btn2.addEventListener('click', testFun);
 for(let i = 0; i < questions.length; i++){
     const hoverDiv = questions[i].querySelectorAll('.inline');
     for(let i = 0; i < hoverDiv.length; i++){
-        hoverDiv.addEventListener('mouseover',changeColor);
+        hoverDiv[i].addEventListener('mouseover',changeColor);
+        hoverDiv[i].addEventListener('onmouseleave',changeColor);
+        hoverDiv[i].addEventListener('click',changeColor);
     }
 }
 
 function changeColor(event){
-    this.style.backgroundColor = "green";
+    if(event.type === 'mouseover'){
+        console.log("enter");
+        this.style.backgroundColor = "white";
+        this.style.color = "black";
+    }
+    else if(event.type === 'mouseleave'){
+        console.log("leave");
+        this.style.backgroundColor = "rgb(1, 1, 75);"
+    }
+    else if(event.type === 'click'){
+        console.log("click");
+        this.style.backgroundColor = "green";
+    }
 }
 
 function testFun(){
