@@ -46,19 +46,29 @@ function changeColor(event){
         }
     }
     else if(event.type === 'click'){
-        if(this.style.backgroundColor !== "green"){
-            for(let i = 0; i < questions.length; i++){
-                const answers = questions[i].querySelectorAll('.inline');
-                for(let i = 0; i < answers.length; i++){
-                    let box = answers[i];
-                    if(box.style.backgroundColor === "green"){
-                        let x = 1;
-                        break;
-                    }
-                }
+        let it = 0;
+        let x = 0;
+        let currentQuestion = this.parentElement;
+        let options = currentQuestion.children;
+        for(let i = 0; i < options.length; i++){
+            if(options[i].style.backgroundColor !== "green"){
+                continue;
+            } else{
+                it = i;
+                x = 1;
+                break;
             }
         }
+        if(x !== 1){
+            this.style.backgroundColor = "green";
+        } else{
+            options[it].style.backgroundColor = "initial"
+            options[it].style.color = "white"
+            this.style.backgroundColor = "green";
+        }
+        
     }
+    
 }
 
 function testFun(){
