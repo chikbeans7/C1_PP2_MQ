@@ -76,10 +76,10 @@ function testFun(){
     for(let i = 0; i < questions.length; i++){
         const answers = questions[i].querySelectorAll('.inline');
         for(let i = 0; i < answers.length; i++){
-            let box = answers[i].children;
-            if(box[1].checked && (box[1].value === "correct")){
+            let answer = answers[i].firstChild;
+            if((answers[i].style.backgroundColor === "green") && (answer.className === "correct")){
                 score++;
-                console.log(box[1].value);
+                console.log(answer.className);
                 break;
             }
         }
