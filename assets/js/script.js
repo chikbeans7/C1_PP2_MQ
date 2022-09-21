@@ -76,10 +76,9 @@ function testFun(){
     for(let i = 0; i < questions.length; i++){
         const answers = questions[i].querySelectorAll('.inline');
         for(let i = 0; i < answers.length; i++){
-            let answer = answers[i].firstChild;
+            let answer = answers[i].firstElementChild;
             if((answers[i].style.backgroundColor === "green") && (answer.className === "correct")){
                 score++;
-                console.log(answer.className);
                 break;
             }
         }
