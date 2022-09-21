@@ -26,6 +26,7 @@ for(let i = 0; i < questions.length; i++){
 
 function changeColor(event){
     if(event.type === 'mouseover'){
+        this.style.backgroundColor === "green" ? green = true: green = false;
         this.style.backgroundColor = "white";
         this.style.color = "black";
     }
@@ -50,11 +51,11 @@ function changeColor(event){
             }
         }
         if(x !== 1){
-            this.classList.add = "select";
+            this.style.backgroundColor = "green"
         } else{
             options[it].style.backgroundColor = "initial"
             options[it].style.color = "white"
-            this.style.backgroundColor = "select";
+            this.style.backgroundColor = "green";
         }
         
     }
