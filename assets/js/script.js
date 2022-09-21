@@ -26,21 +26,11 @@ for(let i = 0; i < questions.length; i++){
 
 function changeColor(event){
     if(event.type === 'mouseover'){
-        if(this.style.backgroundColor === "green"){
-            green = true;
-        } else{
-            green = false;
-        }
         this.style.backgroundColor = "white";
         this.style.color = "black";
     }
     else if(event.type === 'mouseleave'){
-        if(this.style.backgroundColor === "green"){
-            green = true;
-            this.style.backgroundColor = "green";
-        }else if(green === true){
-            this.style.backgroundColor = "green";
-        }else{
+        if(this.className !== "select"){
             this.style.backgroundColor = "initial";
             this.style.color = "white";
         }
@@ -60,11 +50,11 @@ function changeColor(event){
             }
         }
         if(x !== 1){
-            this.style.backgroundColor = "green";
+            this.classList.add = "select";
         } else{
             options[it].style.backgroundColor = "initial"
             options[it].style.color = "white"
-            this.style.backgroundColor = "green";
+            this.style.backgroundColor = "select";
         }
         
     }
