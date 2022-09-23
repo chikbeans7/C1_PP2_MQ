@@ -3,18 +3,17 @@ const txt1 = document.getElementById('uname');
 const btn1 = document.getElementById('cont');
 const out1 = document.getElementById('output1');
 
-//Collects all the data from the question radio buttons
+//For the checkScore function
 const totalScore = document.getElementById('score');
 const btn2 = document.getElementById('finish');
 const questions = document.querySelectorAll('.question-area');
 
-let counter = 0;
+//For the changeColor function
 let green;
 
-// Button event listener for the 2 buttons
+// Adding event listeners to buttons and quesiton options
 btn1.addEventListener('click', getUserName);
-btn2.addEventListener('click', testFun);
-
+btn2.addEventListener('click', checkScore);
 for(let i = 0; i < questions.length; i++){
     const hoverDiv = document.querySelectorAll('.inline');
     for(let i = 0; i < hoverDiv.length; i++){
@@ -25,15 +24,14 @@ for(let i = 0; i < questions.length; i++){
 }
 
 function changeColor(event){
+    //This only executes when the parent element triggers an event
     if(event.target !== event.currentTarget){
         if(event.type === 'mouseover'){
-            console.log("enter");
             this.style.backgroundColor === "green" ? green = true: green = false;
             this.style.backgroundColor = "white";
             this.style.color = "black";
         }
         else if(event.type === 'mouseleave'){
-            console.log("leave");
             if(this.style.backgroundColor === "green"){
             }
             else if(green !== true){
@@ -42,10 +40,8 @@ function changeColor(event){
             } else{
                 this.style.backgroundColor = "green";
             }
-            
         }
         else if(event.type === 'click'){
-            console.log("click");
             let it = 0;
             let x = 0;
             let currentQuestion = this.parentElement;
@@ -70,8 +66,7 @@ function changeColor(event){
     }
 }
 
-
-function testFun(){
+function checkScore(){
     let score = 0;
     for(let i = 0; i < questions.length; i++){
         const answers = questions[i].querySelectorAll('.inline');
