@@ -113,4 +113,4 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 ## Code
 - The user name box code was inspired by -https://www.youtube.com/watch?v=aEj0Wu33hJM
 - To get the radio buttons to uncheck I used this code - https://bobbyhadz.com/blog/javascript-set-radio-to-checked-unchecked#:~:text=To%20set%20a%20radio%20button,checked%20%3D%20true%20.
-- To add an image to the bottom of the screeen I used this code - https://www.geeksforgeeks.org/how-to-append-html-code-to-a-div-using-javascript/
+- To add an image to the bottom of the screeen I used target code - https://www.geeksforgeeks.org/how-to-append-html-code-to-a-div-using-javascript/

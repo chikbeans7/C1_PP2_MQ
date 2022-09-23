@@ -16,53 +16,56 @@ btn1.addEventListener('click', getUserName);
 btn2.addEventListener('click', testFun);
 
 for(let i = 0; i < questions.length; i++){
-    const hoverDiv = questions[i].querySelectorAll('.inline');
+    const hoverDiv = document.querySelectorAll('.inline');
     for(let i = 0; i < hoverDiv.length; i++){
-        hoverDiv[i].addEventListener('mouseover',changeColor);
-        hoverDiv[i].addEventListener('mouseleave',changeColor);
+        hoverDiv[i].addEventListener('mouseover',changeColor, true);
+        hoverDiv[i].addEventListener('mouseleave',changeColor, true);
         hoverDiv[i].addEventListener('click',changeColor);
     }
 }
 
 function changeColor(event){
-    let target = event.target;
-    if(event.type === 'mouseover'){
-        console.log(target);
-        this.style.backgroundColor === "green" ? green = true: green = false;
-        this.style.backgroundColor = "white";
-        this.style.color = "black";
-    }
-    else if(event.type === 'mouseleave'){
-        if(this.style.backgroundColor === "green"){
+    if(event.target !== event.currentTarget){
+        if(event.type === 'mouseover'){
+            console.log("enter");
+            this.style.backgroundColor === "green" ? green = true: green = false;
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
         }
-        else if(green !== true){
-            this.style.backgroundColor = "initial";
-            this.style.color = "white";
-        } else{
-            this.style.backgroundColor = "green";
-        }
-        
-    }
-    else if(event.type === 'click'){
-        let it = 0;
-        let x = 0;
-        let currentQuestion = this.parentElement;
-        let options = currentQuestion.children;
-        for(let i = 0; i < options.length; i++){
-            if(options[i].style.backgroundColor !== "green"){
-                continue;
-            } else{
-                it = i;
-                x = 1;
-                break;
+        else if(event.type === 'mouseleave'){
+            console.log("leave");
+            if(this.style.backgroundColor === "green"){
             }
+            else if(green !== true){
+                this.style.backgroundColor = "initial";
+                this.style.color = "white";
+            } else{
+                this.style.backgroundColor = "green";
+            }
+            
         }
-        if(x !== 1){
-            this.style.backgroundColor = "green"
-        } else{
-            options[it].style.backgroundColor = "initial"
-            options[it].style.color = "white"
-            this.style.backgroundColor = "green";
+        else if(event.type === 'click'){
+            console.log("click");
+            let it = 0;
+            let x = 0;
+            let currentQuestion = this.parentElement;
+            let options = currentQuestion.children;
+            for(let i = 0; i < options.length; i++){
+                if(options[i].style.backgroundColor !== "green"){
+                    continue;
+                } else{
+                    it = i;
+                    x = 1;
+                    break;
+                }
+            }
+            if(x !== 1){
+                this.style.backgroundColor = "green";
+            } else{
+                options[it].style.backgroundColor = "initial";
+                options[it].style.color = "white";
+                this.style.backgroundColor = "green";
+            }
         }
     }
 }
