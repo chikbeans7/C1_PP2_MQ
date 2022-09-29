@@ -10,6 +10,7 @@ const questions = document.querySelectorAll('.question-area');
 
 //For the changeColor function
 let green;
+let red;
 
 // Adding event listeners to buttons and quesiton options
 btn1.addEventListener('click', getUserName);
@@ -28,17 +29,19 @@ function changeColor(event){
     if(event.target !== event.currentTarget){
         if(event.type === 'mouseover'){
             this.style.backgroundColor === "green" ? green = true: green = false;
+            this.style.backgroundColor === "red" ? red = true: red = false;
             this.style.backgroundColor = "white";
             this.style.color = "black";
         }
         else if(event.type === 'mouseleave'){
             if(this.style.backgroundColor === "green"){
-            }
-            else if(green !== true){
+            } else if(green === true){
+                this.style.backgroundColor = "green";
+            } else if(red === true){
+                this.style.backgroundColor = "red";
+            } else{
                 this.style.backgroundColor = "initial";
                 this.style.color = "white";
-            } else{
-                this.style.backgroundColor = "green";
             }
         }
         else if(event.type === 'click'){
