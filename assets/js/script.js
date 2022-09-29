@@ -72,9 +72,14 @@ function checkScore(){
         const answers = questions[i].querySelectorAll('.inline');
         for(let i = 0; i < answers.length; i++){
             let answer = answers[i].firstElementChild;
-            if((answers[i].style.backgroundColor === "green") && (answer.className === "correct")){
-                score++;
-                break;
+            if(answers[i].style.backgroundColor === "green"){
+                if(answer.className === "correct"){
+                    score++;
+                    break;
+                } else{
+                    console.log("incorrect");
+                    answers[i].style.backgroundColor = "red";
+                }
             }
         }
     }
